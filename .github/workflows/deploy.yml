@@ -5,7 +5,7 @@ on:
       - main
       - dev
 env:
-  MONGODB_NAME: Cluster0
+  MONGODB_NAME: some-db-name
 jobs:
   test:
     env:

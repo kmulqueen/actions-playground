@@ -12,7 +12,7 @@ console.log("Trying to connect to db");
 
 try {
   await client.connect();
-  await client.db(dbName).command({ ping: 1 });
+  await client.db().command({ ping: 1 });
   console.log("Connected successfully to server");
 } catch (error) {
   console.log("Connection failed.");
@@ -20,6 +20,6 @@ try {
   console.log("Connection closed.");
 }
 
-const database = client.db(dbName);
+const database = client.db();
 
 export default database;
