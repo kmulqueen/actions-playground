@@ -5,7 +5,7 @@ on:
       - main
       - dev
 env:
-  MONGODB_NAME: github-actions-course
+  MONGODB_NAME: Cluster0
 jobs:
   test:
     env:
