@@ -5,7 +5,7 @@ on:
       - main
       - dev
 env:
-  MONGODB_NAME: some-db-name
+  MONGODB_DB_NAME: github-actions-course
 jobs:
   test:
     env:
@@ -23,15 +23,23 @@ jobs:
       - name: Install dependencies
         run: npm ci
       - name: Run server
-        run: npm start & npx wait-on http://127.0.0.1:$PORT
+        env:
+          MONGODB_USERNAME: ${{ secrets.MONGODB_USERNAME }}
+          MONGODB_PASSWORD: ${{ secrets.MONGODB_PASSWORD }}
+          MONGODB_DB_NAME: ${{ env.MONGODB_DB_NAME }}
+        run: |
+          # Add timeout to MongoDB connection attempts
+          timeout 60s npm start & npx wait-on http://127.0.0.1:$PORT
       - name: Run tests
+        env:
+          MONGODB_USERNAME: ${{ secrets.MONGODB_USERNAME }}
+          MONGODB_PASSWORD: ${{ secrets.MONGODB_PASSWORD }}
+          MONGODB_DB_NAME: ${{ env.MONGODB_DB_NAME }}
         run: npm test
-      - name: Output information
-        run: echo "MONGODB_USERNAME - ${{ secrets.MONGODB_USERNAME }}"
   deploy:
     needs: test
     runs-on: ubuntu-latest
     steps:
       - name: Output information
         run: |
-          echo "MONGODB_NAME - ${{ env.MONGODB_NAME }}"
+          echo "MONGODB_DB_NAME - ${{ env.MONGODB_DB_NAME }}"
