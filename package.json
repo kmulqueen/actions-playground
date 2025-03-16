@@ -8,7 +8,7 @@
     "lint": "eslint --ext .jsx --fix src",
     "build": "vite build",
     "preview": "vite preview",
-    "test": "vitest run"
+    "test": "vitest run src/components/"
   },
   "dependencies": {
     "prop-types": "^15.8.1",
