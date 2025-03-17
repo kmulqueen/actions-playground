@@ -71,6 +71,8 @@ jobs:
     uses: ./.github/workflows/reusable-workflow.yml
     with:
       artifact-name: dist-files
+    secrets:
+      some-secret: ${{ secrets.MONGODB_USERNAME }}
   report:
     needs: [lint, deploy]
     if: ${{ failure() }}
