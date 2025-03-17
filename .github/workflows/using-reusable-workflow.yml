@@ -73,6 +73,12 @@ jobs:
       artifact-name: dist-files
     secrets:
       some-secret: ${{ secrets.MONGODB_USERNAME }}
+  print-deploy-result:
+    runs-on: ubuntun-latest
+    needs: deploy
+    steps:
+      - name: Print deploy output
+        run: echo "${{ needs.deploy.outputs.result }}"
   report:
     needs: [lint, deploy]
     if: ${{ failure() }}
