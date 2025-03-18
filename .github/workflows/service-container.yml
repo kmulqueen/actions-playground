@@ -1,4 +1,4 @@
-name: Deployment (Container)
+name: Deployment (Service Container)
 on:
   push:
     branches:
