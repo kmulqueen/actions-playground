@@ -1,64 +1,25 @@
 {
-  "numTotalTestSuites": 10,
-  "numPassedTestSuites": 8,
-  "numFailedTestSuites": 2,
+  "numTotalTestSuites": 9,
+  "numPassedTestSuites": 6,
+  "numFailedTestSuites": 3,
   "numPendingTestSuites": 0,
-  "numTotalTests": 8,
-  "numPassedTests": 2,
+  "numTotalTests": 6,
+  "numPassedTests": 0,
   "numFailedTests": 6,
   "numPendingTests": 0,
   "numTodoTests": 0,
-  "startTime": 1742432654354,
+  "startTime": 1742703357025,
   "success": false,
   "testResults": [
     {
-      "assertionResults": [
-        {
-          "ancestorTitles": [
-            "",
-            "MainContent"
-          ],
-          "fullName": " MainContent should render a button",
-          "status": "passed",
-          "title": "should render a button",
-          "duration": 36,
-          "failureMessages": []
-        },
-        {
-          "ancestorTitles": [
-            "",
-            "MainContent"
-          ],
-          "fullName": " MainContent should show the help area after clicking the button",
-          "status": "passed",
-          "title": "should show the help area after clicking the button",
-          "duration": 34,
-          "failureMessages": []
-        }
-      ],
-      "startTime": 1742432655395,
-      "endTime": 1742432655465,
+      "assertionResults": [],
+      "startTime": 1742703357025,
+      "endTime": 1742703357025,
       "status": "passed",
-      "message": "",
+      "message": "jest is not defined",
       "name": "/Users/kyle/Desktop/Code_Projects/Udemy-Videos/gh-actions-course/src/components/MainContent.test.jsx"
     },
     {
-      "assertionResults": [],
-      "startTime": 1742432654354,
-      "endTime": 1742432654354,
-      "status": "passed",
-      "message": "section-8/tests/events-api.spec.js:5:23: Playwright Test did not expect test() to be called here.\nMost common reasons include:\n- You are calling test() in a configuration file.\n- You are calling test() in a file that is imported by the configuration file.\n- You have two different versions of @playwright/test. This usually happens\n  when one of the dependencies in your package.json depends on @playwright/test.",
-      "name": "/Users/kyle/Desktop/Code_Projects/Udemy-Videos/gh-actions-course/section-8/tests/events-api.spec.js"
-    },
-    {
-      "assertionResults": [],
-      "startTime": 1742432654354,
-      "endTime": 1742432654354,
-      "status": "passed",
-      "message": "section-6/tests/events-api.spec.js:5:23: Playwright Test did not expect test() to be called here.\nMost common reasons include:\n- You are calling test() in a configuration file.\n- You are calling test() in a file that is imported by the configuration file.\n- You have two different versions of @playwright/test. This usually happens\n  when one of the dependencies in your package.json depends on @playwright/test.",
-      "name": "/Users/kyle/Desktop/Code_Projects/Udemy-Videos/gh-actions-course/section-6/tests/events-api.spec.js"
-    },
-    {
       "assertionResults": [
         {
           "ancestorTitles": [
@@ -68,50 +29,7 @@
           "fullName": " MainContent should render a button",
           "status": "failed",
           "title": "should render a button",
-          "duration": 13,
-          "failureMessages": [
-            "Cannot read properties of null (reading 'useState')"
-          ],
-          "location": {
-            "line": 14,
-            "column": 27
-          }
-        },
-        {
-          "ancestorTitles": [
-            "",
-            "MainContent"
-          ],
-          "fullName": " MainContent should show the help area after clicking the button",
-          "status": "failed",
-          "title": "should show the help area after clicking the button",
-          "duration": 4,
-          "failureMessages": [
-            "Cannot read properties of null (reading 'useState')"
-          ],
-          "location": {
-            "line": 22,
-            "column": 27
-          }
-        }
-      ],
-      "startTime": 1742432655561,
-      "endTime": 1742432655578,
-      "status": "failed",
-      "message": "",
-      "name": "/Users/kyle/Desktop/Code_Projects/Udemy-Videos/gh-actions-course/section-7/src/components/MainContent.test.jsx"
-    },
-    {
-      "assertionResults": [
-        {
-          "ancestorTitles": [
-            "",
-            "MainContent"
-          ],
-          "fullName": " MainContent should render a button",
-          "status": "failed",
-          "title": "should render a button",
-          "duration": 13,
+          "duration": 15,
           "failureMessages": [
             "Cannot read properties of null (reading 'useState')"
           ],
@@ -138,11 +56,11 @@
           }
         }
       ],
-      "startTime": 1742432655562,
-      "endTime": 1742432655578,
+      "startTime": 1742703357950,
+      "endTime": 1742703357968,
       "status": "failed",
       "message": "",
-      "name": "/Users/kyle/Desktop/Code_Projects/Udemy-Videos/gh-actions-course/section 3/src/components/MainContent.test.jsx"
+      "name": "/Users/kyle/Desktop/Code_Projects/Udemy-Videos/gh-actions-course/section-7/src/components/MainContent.test.jsx"
     },
     {
       "assertionResults": [
@@ -154,7 +72,7 @@
           "fullName": " MainContent should render a button",
           "status": "failed",
           "title": "should render a button",
-          "duration": 13,
+          "duration": 14,
           "failureMessages": [
             "Cannot read properties of null (reading 'useState')"
           ],
@@ -181,11 +99,70 @@
           }
         }
       ],
-      "startTime": 1742432655562,
-      "endTime": 1742432655579,
+      "startTime": 1742703357951,
+      "endTime": 1742703357969,
+      "status": "failed",
+      "message": "",
+      "name": "/Users/kyle/Desktop/Code_Projects/Udemy-Videos/gh-actions-course/section 3/src/components/MainContent.test.jsx"
+    },
+    {
+      "assertionResults": [
+        {
+          "ancestorTitles": [
+            "",
+            "MainContent"
+          ],
+          "fullName": " MainContent should render a button",
+          "status": "failed",
+          "title": "should render a button",
+          "duration": 16,
+          "failureMessages": [
+            "Cannot read properties of null (reading 'useState')"
+          ],
+          "location": {
+            "line": 14,
+            "column": 27
+          }
+        },
+        {
+          "ancestorTitles": [
+            "",
+            "MainContent"
+          ],
+          "fullName": " MainContent should show the help area after clicking the button",
+          "status": "failed",
+          "title": "should show the help area after clicking the button",
+          "duration": 3,
+          "failureMessages": [
+            "Cannot read properties of null (reading 'useState')"
+          ],
+          "location": {
+            "line": 22,
+            "column": 27
+          }
+        }
+      ],
+      "startTime": 1742703357951,
+      "endTime": 1742703357970,
       "status": "failed",
       "message": "",
       "name": "/Users/kyle/Desktop/Code_Projects/Udemy-Videos/gh-actions-course/section-5/src/components/MainContent.test.jsx"
+    },
+    {
+      "assertionResults": [],
+      "startTime": 1742703357025,
+      "endTime": 1742703357025,
+      "status": "passed",
+      "message": "section-6/tests/events-api.spec.js:5:23: Playwright Test did not expect test() to be called here.\nMost common reasons include:\n- You are calling test() in a configuration file.\n- You are calling test() in a file that is imported by the configuration file.\n- You have two different versions of @playwright/test. This usually happens\n  when one of the dependencies in your package.json depends on @playwright/test.",
+      "name": "/Users/kyle/Desktop/Code_Projects/Udemy-Videos/gh-actions-course/section-6/tests/events-api.spec.js"
+    },
+    {
+      "assertionResults": [],
+      "startTime": 1742703357025,
+      "endTime": 1742703357025,
+      "status": "passed",
+      "message": "section-8/tests/events-api.spec.js:5:23: Playwright Test did not expect test() to be called here.\nMost common reasons include:\n- You are calling test() in a configuration file.\n- You are calling test() in a file that is imported by the configuration file.\n- You have two different versions of @playwright/test. This usually happens\n  when one of the dependencies in your package.json depends on @playwright/test.",
+      "name": "/Users/kyle/Desktop/Code_Projects/Udemy-Videos/gh-actions-course/section-8/tests/events-api.spec.js"
     }
   ]
 }
