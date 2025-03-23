@@ -4,7 +4,7 @@ inputs:
   caching:
     description: "Option for caching dependencies"
     required: false
-    default: "true"
+    default: 'true'
 outputs:
   used-cache:
     description: "Whether the cache was used or not."
